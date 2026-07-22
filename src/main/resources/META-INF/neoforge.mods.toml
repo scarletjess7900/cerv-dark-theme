@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/scarletjess/cervdarktheme/issues"
+
+[[mods]]
+modId = "cervdarktheme"
+version = "1.1.0"
+displayName = "CervDarkTheme"
+authors = "scarletjess"
+description = '''
+Makes the Mojang loading screen dark, and lets you customise every colour of it:
+background, progress bar, bar background, border, logo tint, and fade durations.
+'''
+
+[[dependencies.cervdarktheme]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.cervdarktheme]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.cervdarktheme]]
+modId = "fzzy_config"
+type = "required"
+versionRange = "[0.7.0,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[mixins]]
+config = "cervdarktheme.mixins.json"

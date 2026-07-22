@@ -1,0 +1,13 @@
+# Gradle
+.gradle/
+build/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.eclipse/
+bin/
+
+# Minecraft run directory
+run/

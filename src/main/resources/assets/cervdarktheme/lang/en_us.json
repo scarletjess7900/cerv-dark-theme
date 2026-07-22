@@ -1,0 +1,19 @@
+{
+  "cervdarktheme.config": "CervDarkTheme",
+  "cervdarktheme.config.backgroundColor": "Background Color",
+  "cervdarktheme.config.backgroundColor.desc": "Background color of the loading screen. Vanilla: #EF323D",
+  "cervdarktheme.config.barColor": "Bar Color",
+  "cervdarktheme.config.barColor.desc": "Color of the progress bar fill. Vanilla: #FFFFFF",
+  "cervdarktheme.config.barBackgroundColor": "Bar Background Color",
+  "cervdarktheme.config.barBackgroundColor.desc": "Color of the empty (unfilled) part of the progress bar.",
+  "cervdarktheme.config.borderColor": "Border Color",
+  "cervdarktheme.config.borderColor.desc": "Color of the progress bar border. Vanilla: #FFFFFF",
+  "cervdarktheme.config.logoColor": "Logo Color",
+  "cervdarktheme.config.logoColor.desc": "Tint applied to the Mojang Studios logo. #FFFFFF keeps it untinted.",
+  "cervdarktheme.config.fadeInSeconds": "Fade In Duration",
+  "cervdarktheme.config.fadeInSeconds.desc": "Fade-in duration of the loading screen, in seconds. Vanilla: 0.5",
+  "cervdarktheme.config.fadeOutSeconds": "Fade Out Duration",
+  "cervdarktheme.config.fadeOutSeconds.desc": "Fade-out duration of the loading screen, in seconds. Vanilla: 1.0",
+  "cervdarktheme.config.disableEarlyWindow": "Disable Early Loading Window",
+  "cervdarktheme.config.disableEarlyWindow.desc": "Automatically sets earlyWindowControl = false in config/fml.toml so the fully themed vanilla loading screen is used. Takes effect on the next launch."
+}

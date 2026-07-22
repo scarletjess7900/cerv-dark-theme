@@ -1,0 +1,61 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.95'
+}
+
+version = project.mod_version
+group = project.mod_group_id
+
+base {
+    archivesName = project.mod_id
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'FzzyMaven'
+        url = 'https://maven.fzzyhmstrs.me/'
+    }
+    maven {
+        name = 'KotlinForForge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+    }
+}
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run')
+        }
+    }
+
+    mods {
+        "${project.mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+dependencies {
+    implementation "thedarkcolour:kotlinforforge-neoforge:${project.kff_version}"
+    implementation "me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}"
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'   : project.mod_name,
+            'Implementation-Title'  : project.mod_name,
+            'Implementation-Version': project.mod_version,
+        ])
+    }
+}

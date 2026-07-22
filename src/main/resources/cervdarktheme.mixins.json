@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.scarletjess.cervdarktheme.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "LoadingOverlayAccessor",
+    "LoadingOverlayMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
